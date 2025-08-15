@@ -17,7 +17,7 @@
    width: 60px;
 }
 #topHeader #logo img:nth-child(3n){
-   width: 200px;
+   width: 100px;
 }
 #topHeader #logo img:nth-child(4n){
     width: 100px;
@@ -40,7 +40,7 @@
 #searchArea img{
     width: 20px;
     position: absolute;
-    right: 20%;
+    right: 25%;
 }
 #sectionLogin{
     display: flex;
@@ -74,6 +74,7 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
+
 }
 #menuNavigation #menuCategorias{
     display: flex;  
@@ -102,6 +103,7 @@
     gap: 5px;
     padding: 0 10px;
     height: 46px;
+
 }
 #mapaIcon{
     width: 30px;
@@ -132,7 +134,7 @@
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     top: 3.7%;
-    left: 84.4%;
+    left: 81.5%;
     font-size: 1.5rem;
 }
 .slideshow-wrapper {
