@@ -25,6 +25,7 @@
 #searchArea{
     display: flex;
     align-items: center;
+    position: relative; /* novo */
 }
 #searchArea input{
     width: 520px;
@@ -36,11 +37,14 @@
     padding-left: 3px;
     box-shadow: 1px 1px 5px rgb(189, 187, 187);
     font-weight: bold;
+    padding-right: 35px; /* espaço para a lupa */
 }
 #searchArea img{
     width: 20px;
     position: absolute;
-    right: 25%;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%)
 }
 #sectionLogin{
     display: flex;
@@ -95,7 +99,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 3px;
-    padding: 7px;
+    padding: 7px ;
 }
 #localEntrega{
     display: flex;
@@ -121,25 +125,32 @@
     display: flex;
     align-items: center;
 }
-#cartArea #cart{
-    padding: 5px;
+#cartArea #cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-}
-#cart img{
-    width: 32px;
-}
-#cartArea #cart p{
+#cartArea #cart p {
     position: absolute;
-    bottom: 83.4%;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    top: 3.7%;
-    left: 81.5%;
-    font-size: 1.5rem;
+    top: -8px;
+    right: -8px;
+    background-color: green;
+    color: white;
+    width: 20px;
+    height: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .slideshow-wrapper {
   position: relative;
-  width: 2000px;
+width: 100%;
   max-width: 100%;
   height: 350px;
   margin: auto;
