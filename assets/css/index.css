@@ -1,0 +1,212 @@
+#topHeader{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 10px;
+}
+#topHeader #logo{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+#topHeader #logo img:nth-child(1n){
+   width: 50px;
+}
+#topHeader #logo img:nth-child(2n){
+   width: 60px;
+}
+#topHeader #logo img:nth-child(3n){
+   width: 200px;
+}
+#topHeader #logo img:nth-child(4n){
+    width: 100px;
+}
+#searchArea{
+    display: flex;
+    align-items: center;
+}
+#searchArea input{
+    width: 520px;
+    height: 35px;
+    border: none;
+    border-radius:3px;
+    font-size: 1.3rem;
+    outline: none;
+    padding-left: 3px;
+    box-shadow: 1px 1px 5px rgb(189, 187, 187);
+    font-weight: bold;
+}
+#searchArea img{
+    width: 20px;
+    position: absolute;
+    right: 20%;
+}
+#sectionLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sectionLogin img{
+    width: 25px;
+    height: 25px;
+}
+#textSectionLogin{
+    text-align: justify;
+}
+#sectionLogin p{
+    font-size: 1.3rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+#sectionLogin span a{
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+#sectionLogin span i{
+    font-size: 1rem;
+    font-weight: bold;
+}
+#menuNavigation{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+#menuNavigation #menuCategorias{
+    display: flex;  
+    gap: 7px;
+    height: 46px;
+    justify-content: center;
+
+}
+#menuNavigation #menuCategorias li a{
+    font-size: 1.8rem;
+    font-family: "WDXL Lubrifont SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+#menuCategorias li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    padding: 7px;
+}
+#localEntrega{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 10px;
+    height: 46px;
+}
+#mapaIcon{
+    width: 30px;
+}
+#localText{
+    font-size: 1.3rem;  
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+#localTextP1{
+    text-transform: uppercase;
+    color: rgba(120, 117, 117, 0.731);
+}
+#cartArea{
+    display: flex;
+    align-items: center;
+}
+#cartArea #cart{
+    padding: 5px;
+
+}
+#cart img{
+    width: 32px;
+}
+#cartArea #cart p{
+    position: absolute;
+    bottom: 83.4%;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    top: 3.7%;
+    left: 84.4%;
+    font-size: 1.5rem;
+}
+.slideshow-wrapper {
+  position: relative;
+  width: 2000px;
+  max-width: 100%;
+  height: 350px;
+  margin: auto;
+  overflow: hidden;
+}
+.slideshow {
+  display: flex;
+  width: 500%;
+  height: 100%;
+  transition: transform 0.6s ease;
+}
+
+.slide {
+  width: 20%;
+  transition: opacity 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Slide position based on selected radio */
+#slide1:checked ~ .slideshow {
+  transform: translateX(0%);
+}
+#slide2:checked ~ .slideshow {
+  transform: translateX(-20%);
+}
+#slide3:checked ~ .slideshow {
+  transform: translateX(-40%);
+}
+#slide4:checked ~ .slideshow {
+  transform: translateX(-60%);
+}
+#slide5:checked ~ .slideshow {
+  transform: translateX(-80%);
+}
+
+/* Navigation dots */
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.manual-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#slide1:checked ~ .navigation-manual label[for="slide1"],
+#slide2:checked ~ .navigation-manual label[for="slide2"],
+#slide3:checked ~ .navigation-manual label[for="slide3"],
+#slide4:checked ~ .navigation-manual label[for="slide4"],
+#slide5:checked ~ .navigation-manual label[for="slide5"] {
+  background: #333;
+}
