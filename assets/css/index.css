@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-around;
     padding: 0px 10px;
+      background-color: #d1ddc0;
 }
 #topHeader #logo{
     display: flex;
@@ -28,8 +29,8 @@
     position: relative; /* novo */
 }
 #searchArea input{
-    width: 520px;
-    height: 35px;
+    width: 600px;
+    height: 45px;
     border: none;
     border-radius:3px;
     font-size: 1.3rem;
@@ -38,6 +39,7 @@
     box-shadow: 1px 1px 5px rgb(189, 187, 187);
     font-weight: bold;
     padding-right: 35px; /* espaço para a lupa */
+    text-transform: uppercase;
 }
 #searchArea img{
     width: 20px;
@@ -62,7 +64,7 @@
     font-size: 1.3rem;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
 }
 #sectionLogin span a{
     font-size: 1rem;
@@ -76,28 +78,28 @@
 #menuNavigation{
     display: flex;
     width: 100%;
+    height: 46px;
     align-items: center;
-    justify-content: space-between;
-
 }
 #menuNavigation #menuCategorias{
     display: flex;  
     gap: 7px;
     height: 46px;
     justify-content: center;
-
+    width: 1200px;
 }
 #menuNavigation #menuCategorias li a{
     font-size: 1.8rem;
     font-family: "WDXL Lubrifont SC", sans-serif;
-    font-weight: 400;
+    font-weight:100;
     font-style: normal;
-    color: black;
+    color: grey;
 }
 #menuCategorias li{
     display: flex;
     align-items: center;
-    justify-content: center;
+    width: 25%;
+    justify-content: space-between;
     border-radius: 3px;
     padding: 7px ;
 }
@@ -107,13 +109,13 @@
     gap: 5px;
     padding: 0 10px;
     height: 46px;
-
+    width: 400px;
 }
 #mapaIcon{
     width: 30px;
 }
 #localText{
-    font-size: 1.3rem;  
+    font-size: 1.5rem;  
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
 }
@@ -131,7 +133,6 @@
     align-items: center;
     justify-content: center;
 }
-
 #cartArea #cart p {
     position: absolute;
     top: -8px;
@@ -147,7 +148,6 @@
     align-items: center;
     justify-content: center;
 }
-
 .slideshow-wrapper {
   position: relative;
 width: 100%;
@@ -162,24 +162,18 @@ width: 100%;
   height: 100%;
   transition: transform 0.6s ease;
 }
-
 .slide {
   width: 20%;
   transition: opacity 0.5s;
 }
-
 .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-/* Hide radio buttons */
 input[type="radio"] {
   display: none;
 }
-
-/* Slide position based on selected radio */
 #slide1:checked ~ .slideshow {
   transform: translateX(0%);
 }
@@ -195,8 +189,6 @@ input[type="radio"] {
 #slide5:checked ~ .slideshow {
   transform: translateX(-80%);
 }
-
-/* Navigation dots */
 .navigation-manual {
   position: absolute;
   width: 100%;
@@ -206,7 +198,6 @@ input[type="radio"] {
   align-items: center;
   gap: 10px;
 }
-
 .manual-btn {
   width: 12px;
   height: 12px;
@@ -215,11 +206,251 @@ input[type="radio"] {
   cursor: pointer;
   transition: background 0.3s;
 }
-
 #slide1:checked ~ .navigation-manual label[for="slide1"],
 #slide2:checked ~ .navigation-manual label[for="slide2"],
 #slide3:checked ~ .navigation-manual label[for="slide3"],
 #slide4:checked ~ .navigation-manual label[for="slide4"],
 #slide5:checked ~ .navigation-manual label[for="slide5"] {
   background: #333;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50PX;
+    padding: 10px 0px;
+    font-size: 5rem;
+}
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+#conteinerCategory {
+  width: 98%;
+  height: 130px;
+  align-items: center;
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+#conteinerCategory::-webkit-scrollbar {
+  display: none; /* Oculta a barra de rolagem */
+}
+.categoryitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px;
+  gap: 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.57);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  width: 130px;
+  color: grey;
+  flex: 0 0 130px; /* largura fixa para scroll controlado */
+}
+.categoryitem img {
+  width: 45px;
+}
+.arrow {
+   background-color: #d1ddc0;
+  border: none;
+  font-size: 18px;         /* menor fonte (seta) */
+  cursor: pointer;
+  padding: 8px;            /* menor botão */
+  color: #555;
+  transition: background 0.2s ease;
+  z-index: 2;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;      /* mais circular */
+  width: 35px;             /* tamanho fixo */
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow:hover {
+  background-color: #eee;
+}
+.left {
+  margin-right: 30px;
+}
+.right {
+  margin-left: 20px;
+}
+section{
+  width: 100%;  
+}
+#novidades{
+  padding: 10px  20px 20px 20px ;
+}
+#recomendados{
+   padding: 20px  20px 20px 20px 
+}
+#conteinerNovidades, #conteinerRecomendado{
+  width: 100%;  
+  display: flex;
+  padding: 20px 10px;
+  gap: 20px ;
+  flex-wrap: wrap;
+}
+.itemNovidades{
+  width: 190px;
+  height: 290px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.57);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+} 
+.imageNovidades{
+ width: 130px;
+ height: 150px;
+ border-radius: 5px;
+}
+ .imageRecomedados{
+  width: 1px;
+ }
+#novidades p, #recomendados p{
+  font-size: 2.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  color: rgb(14, 72, 14);
+}
+.spaceImage{
+  width: 100%;
+  border-radius: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.infoProduto{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+#conteinerNovidades .infoProduto p{
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+
+  display: -webkit-box;       /* necessário para o -webkit-line-clamp */
+  -webkit-line-clamp: 2;      /* Chrome, Edge, Safari */
+  -webkit-box-orient: vertical;
+  
+  line-clamp: 2;              /* padrão (experimental, futuro suporte) */
+  
+  overflow: hidden;
+  padding: 0 10px;
+  color: #000;  
+}
+.price{
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  padding: 0 10px  0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#conteinerNovidades .price .pricetext p{
+  font-size: 2.2rem;
+}
+.imagefav{
+  width: 23px;
+}
+.favadd{
+  display: flex;
+  gap: 10px;
+}
+section #novidades .viewMore,section #recomendados .viewMore{
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  color: grey;
+  font-style: oblique;
+  text-decoration:underline;
+  float: right;
+}
+footer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #d1ddc0;
+}
+#topFooter{
+  width:100%;
+  padding:20px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;  
+  font-size: 4rem;
+  font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: grey ;
+
+}
+.areasFooter{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+
+.areasFooter h3{
+   letter-spacing: 2px; 
+}
+
+.areasFooter ul .ListFooter a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 1.3rem;
+    color: #000;
+}
+#bottomFooter{
+  width: 100%;
+    padding:20px 20px;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#bottomFooter p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    line-height: 25px;
+    color: grey;
+    font-size: 1rem;
+}
+hr{
+  width: 97%;
 }

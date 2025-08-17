@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/responsive/indexResponsive.css">
+    <script src="assets/js/carouselItens.js"></script>
 </head>
 <body>
     <header>
@@ -43,26 +44,25 @@
                 </div>
             </div>
         </div>
-<hr>
+
         <nav id="menuNavigation">
-            <div id="localEntrega">
+           <div id="localEntrega">
                 <img src="assets/images/icons/mapa.png" alt="" id="mapaIcon">
                 <span id="localText">
                     <p id="localTextP1">Local de Entrega</p>
                     <p>Rua Manoel Soares Guimarães - Nº 236, Centro</p>
                 </span>
-        </div>
-            
+            </div>
             <ul id="menuCategorias">
                 <li><a href="">Doação</a></li>
                 <li><a href="">Troca</a></li>
                 <li><a href="">Vendas</a></li>
                 <li><a href="">Parcerias</a></li>
-                <li><a href="">Historia</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="">Eventos</a></li>
+                <li><a href="">Ajuda</a></li>
+                <li><a href="">Sobre Nos</a></li>
             </ul>
         </nav>
-
         <div class="slideshow-wrapper">
                 <input type="radio" name="slide" id="slide1" checked>
                 <input type="radio" name="slide" id="slide2">
@@ -100,7 +100,388 @@
     </header>
 
     <main>
-        <div class="category-container"></div>
+      
+        <section class="carousel-wrapper">
+        
+          <button class="arrow left" onclick="scrollCarousel(-1)">&#10094;</button>
+        
+          <div id="conteinerCategory">
+            <div class="categoryitem">
+              <img src="assets/images/icons/recycle-symbol.png" alt="">
+              <p class="textCategoryItem">Usados</p>
+            </div>
+        
+            <div class="categoryitem">
+              <img src="assets/images/icons/trade.png" alt="">
+              <p class="textCategoryItem">Trocas</p>
+            </div>
+        
+            <div class="categoryitem">
+              <img src="assets/images/icons/storage-box.png" alt="">
+              <p class="textCategoryItem">Brinquedos</p>
+            </div>
+        
+            <div class="categoryitem">
+              <img src="assets/images/icons/kitchen.png" alt="">
+              <p class="textCategoryItem">Cozinha</p>
+            </div>
+        
+            <div class="categoryitem">
+              <img src="assets/images/icons/shelf.png" alt="">
+              <p class="textCategoryItem">Decoração</p>
+            </div>
+        
+            <div class="categoryitem">
+              <img src="assets/images/icons/book.png" alt="">
+              <p class="textCategoryItem">Livros</p>
+            </div>
+            
+             <div class="categoryitem">
+              <img src="assets/images/icons/cardiogram.png" alt="">
+              <p class="textCategoryItem">Saude</p>
+            </div>
+        
+             <div class="categoryitem">
+              <img src="assets/images/icons/shopping.png" alt="">
+              <p class="textCategoryItem">Acessorios</p>
+            </div>
+
+            <div class="categoryitem">
+              <img src="assets/images/icons/delivery-man.png" alt="">
+              <p class="textCategoryItem">Delivery</p>
+            </div>
+
+             <div class="categoryitem">
+              <img src="assets/images/icons/cosmetics.png" alt="">
+              <p class="textCategoryItem">Maquiagem</p>
+            </div>
+
+             <div class="categoryitem">
+              <img src="assets/images/icons/hair.png" alt="">
+              <p class="textCategoryItem">Cabelo</p>
+            </div>
+
+            <div class="categoryitem">
+              <img src="assets/images/icons/tool-box.png" alt="">
+              <p class="textCategoryItem">Ferramentas</p>
+            </div>
+        
+            <div class="categoryitem">
+              <img src="assets/images/icons/television.png" alt="">
+              <p class="textCategoryItem">Eletronicos</p>
+            </div>
+        
+            <div class="categoryitem">
+              <img src="assets/images/icons/plant.png" alt="">
+              <p class="textCategoryItem">Plantas</p>
+            </div>
+        
+            <div class="categoryitem">
+              <img src="assets/images/icons/male-clothes.png" alt="">
+              <p class="textCategoryItem">Roupass</p>
+            </div>
+          </div>
+          <button class="arrow right" onclick="scrollCarousel(1)">&#10095;</button>
+        </section>
+
+        <section id="areasPodutos">
+            <div id="novidades">
+                <p>NOVIDADES</p>
+                <div id="conteinerNovidades">
+                
+                    <div class="itemNovidades">
+                        <div class="spaceImage">
+                            <img src="assets/images/products/produto01.webp" alt="" class="imageNovidades">
+                        </div>
+                        <div class="infoProduto">
+                            <p>Mcfarlane DC Multiverse: Batman Begins - Batman </p>
+                        </div>
+                            <div class="price">
+                                <div class="pricetext">
+                                    <p>R$ 78,67</p>
+                                </div>
+
+                                <div class="favadd">
+                                    <img src="assets/images/icons/heart.png" alt="" class="imagefav">
+                                    <img src="assets/images/icons/shopping-cart.png" alt="" class="imagefav">
+                                </div>
+                                
+                            </div>
+                    </div>
+                    
+                    <div class="itemNovidades">
+                        <div class="spaceImage">
+                            <img src="assets/images/products/produto02.webp" alt="" class="imageNovidades">
+                        </div>
+                        <div class="infoProduto">
+                            <p>Cubo Magico Magnetico, Muito Divertido 3x3</p>
+                        </div>
+                            <div class="price">
+                                <div class="pricetext">
+                                    <p>R$ 78,67</p>
+                                </div>
+
+                                <div class="favadd">
+                                    <img src="assets/images/icons/heart.png" alt="" class="imagefav">
+                                    <img src="assets/images/icons/shopping-cart.png" alt="" class="imagefav">
+                                </div>
+                                
+                            </div>
+                    </div>
+
+                     <div class="itemNovidades">
+                        <div class="spaceImage">
+                            <img src="assets/images/products/produto02.webp" alt="" class="imageNovidades">
+                        </div>
+                        <div class="infoProduto">
+                            <p>Cubo Magico Magnetico, Muito Divertido 3x3</p>
+                        </div>
+                            <div class="price">
+                                <div class="pricetext">
+                                    <p>R$ 78,67</p>
+                                </div>
+
+                                <div class="favadd">
+                                    <img src="assets/images/icons/heart.png" alt="" class="imagefav">
+                                    <img src="assets/images/icons/shopping-cart.png" alt="" class="imagefav">
+                                </div>
+                                
+                            </div>
+                    </div>
+
+                    <div class="itemNovidades">
+                        <div class="spaceImage">
+                            <img src="assets/images/products/produto03.webp" alt="" class="imageNovidades">
+                        </div>
+                        <div class="infoProduto">
+                            <p>algum produto aleatorio que eu puxei e eu nao lembro qual é na hora de colocar no codigo</p>
+                        </div>
+                            <div class="price">
+                                <div class="pricetext">
+                                    <p>R$ 78,67</p>
+                                </div>
+
+                                <div class="favadd">
+                                    <img src="assets/images/icons/heart.png" alt="" class="imagefav">
+                                    <img src="assets/images/icons/shopping-cart.png" alt="" class="imagefav">
+                                </div>
+                                
+                            </div>
+                    </div>
+
+                    <div class="itemNovidades">
+                        <div class="spaceImage">
+                            <img src="assets/images/products/produto04.webp" alt="" class="imageNovidades">
+                        </div>
+                        <div class="infoProduto">
+                            <p>nao sei mais o que colocar nesses textos de nomes de produtos</p>
+                        </div>
+                            <div class="price">
+                                <div class="pricetext">
+                                    <p>R$ 78,67</p>
+                                </div>
+
+                                <div class="favadd">
+                                    <img src="assets/images/icons/heart.png" alt="" class="imagefav">
+                                    <img src="assets/images/icons/shopping-cart.png" alt="" class="imagefav">
+                                </div>
+                                
+                            </div>
+                    </div>
+
+                    <div class="itemNovidades">
+                        <div class="spaceImage">
+                            <img src="assets/images/products/produto05.webp" alt="" class="imageNovidades">
+                        </div>
+                        <div class="infoProduto">
+                            <p>Será que eu vou ser amado por quem eu sou algum dia ?</p>
+                        </div>
+                            <div class="price">
+                                <div class="pricetext">
+                                    <p>R$ 78,67</p>
+                                </div>
+
+                                <div class="favadd">
+                                    <img src="assets/images/icons/heart.png" alt="" class="imagefav">
+                                    <img src="assets/images/icons/shopping-cart.png" alt="" class="imagefav">
+                                </div>
+                                
+                            </div>
+                    </div>
+                </div>
+                <a href="" class="viewMore">ver mais</a>
+            </div>
+
+            <div id="recomendados">
+                  <p>Para Você</p>
+                <div id="conteinerNovidades">
+                
+                    <div class="itemNovidades">
+                        <div class="spaceImage">
+                            <img src="assets/images/products/produto01.webp" alt="" class="imageNovidades">
+                        </div>
+                        <div class="infoProduto">
+                            <p>Mcfarlane DC Multiverse: Batman Begins - Batman </p>
+                        </div>
+                            <div class="price">
+                                <div class="pricetext">
+                                    <p>R$ 78,67</p>
+                                </div>
+
+                                <div class="favadd">
+                                    <img src="assets/images/icons/heart.png" alt="" class="imagefav">
+                                    <img src="assets/images/icons/shopping-cart.png" alt="" class="imagefav">
+                                </div>
+                                
+                            </div>
+                    </div>
+
+                     <div class="itemNovidades">
+                        <div class="spaceImage">
+                            <img src="assets/images/products/produto01.webp" alt="" class="imageNovidades">
+                        </div>
+                        <div class="infoProduto">
+                            <p>Mcfarlane DC Multiverse: Batman Begins - Batman </p>
+                        </div>
+                            <div class="price">
+                                <div class="pricetext">
+                                    <p>R$ 78,67</p>
+                                </div>
+
+                                <div class="favadd">
+                                    <img src="assets/images/icons/heart.png" alt="" class="imagefav">
+                                    <img src="assets/images/icons/shopping-cart.png" alt="" class="imagefav">
+                                </div>
+                                
+                            </div>
+                    </div>
+                    
+                    <div class="itemNovidades">
+                        <div class="spaceImage">
+                            <img src="assets/images/products/produto02.webp" alt="" class="imageNovidades">
+                        </div>
+                        <div class="infoProduto">
+                            <p>Cubo Magico Magnetico, Muito Divertido 3x3</p>
+                        </div>
+                            <div class="price">
+                                <div class="pricetext">
+                                    <p>R$ 78,67</p>
+                                </div>
+
+                                <div class="favadd">
+                                    <img src="assets/images/icons/heart.png" alt="" class="imagefav">
+                                    <img src="assets/images/icons/shopping-cart.png" alt="" class="imagefav">
+                                </div>
+                                
+                            </div>
+                    </div>
+
+                    <div class="itemNovidades">
+                        <div class="spaceImage">
+                            <img src="assets/images/products/produto03.webp" alt="" class="imageNovidades">
+                        </div>
+                        <div class="infoProduto">
+                            <p>algum produto aleatorio que eu puxei e eu nao lembro qual é na hora de colocar no codigo</p>
+                        </div>
+                            <div class="price">
+                                <div class="pricetext">
+                                    <p>R$ 78,67</p>
+                                </div>
+
+                                <div class="favadd">
+                                    <img src="assets/images/icons/heart.png" alt="" class="imagefav">
+                                    <img src="assets/images/icons/shopping-cart.png" alt="" class="imagefav">
+                                </div>
+                                
+                            </div>
+                    </div>
+
+                    <div class="itemNovidades">
+                        <div class="spaceImage">
+                            <img src="assets/images/products/produto04.webp" alt="" class="imageNovidades">
+                        </div>
+                        <div class="infoProduto">
+                            <p>nao sei mais o que colocar nesses textos de nomes de produtos</p>
+                        </div>
+                            <div class="price">
+                                <div class="pricetext">
+                                    <p>R$ 78,67</p>
+                                </div>
+
+                                <div class="favadd">
+                                    <img src="assets/images/icons/heart.png" alt="" class="imagefav">
+                                    <img src="assets/images/icons/shopping-cart.png" alt="" class="imagefav">
+                                </div>
+                                
+                            </div>
+                    </div>
+
+                    <div class="itemNovidades">
+                        <div class="spaceImage">
+                            <img src="assets/images/products/produto05.webp" alt="" class="imageNovidades">
+                        </div>
+                        <div class="infoProduto">
+                            <p>Será que eu vou ser amado por quem eu sou algum dia ?</p>
+                        </div>
+                            <div class="price">
+                                <div class="pricetext">
+                                    <p>R$ 78,67</p>
+                                </div>
+
+                                <div class="favadd">
+                                    <img src="assets/images/icons/heart.png" alt="" class="imagefav">
+                                    <img src="assets/images/icons/shopping-cart.png" alt="" class="imagefav">
+                                </div>
+                                
+                            </div>
+                    </div>
+                </div>
+                <a href="" class="viewMore">ver mais</a>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        
+        <section id="topFooter">
+            <div class="areasFooter">
+                <h3>ATEDIMENTO AO CLIENTE</h3>
+                <div>
+                    <ul>
+                        <li class="ListFooter"><a href="">Central de Ajuda</a></li>
+                        <li class="ListFooter"><a href="">Metodos de Pagamento</a></li>
+                        <li class="ListFooter"><a href="">Garantia Sustenta+</a></li>
+                        <li class="ListFooter"><a href="">Fale Conosco</a></li>
+                        <li class="ListFooter"><a href="">Devolução e Reembolso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="areasFooter">
+                <h3>SOBRE O SUSTENTA+</h3>
+                <div>
+                    <ul>
+                        <li class="ListFooter"><a href="">Sobre Nós</a></li>
+                        <li class="ListFooter"><a href="">Politicas</a></li>
+                        <li class="ListFooter"><a href="">Politicas de Privacidade</a></li>
+                        <li class="ListFooter"><a href="">Venda no Sustenta+</a></li>
+                        <li class="ListFooter"><a href="">Programa de Afiliados do Sustenta+</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="areasFooter">
+                <h3>PAGAMENTOS</h3>
+                <div>
+                  
+                </div>
+            </div>
+        </section>
+<hr>
+        <section id="bottomFooter">
+         <p> Amazon Serviços de Varejo do Brasil Ltda. | CNPJ 15.436.940/0001-03 </p>
+<p>Av. Juscelino Kubitschek, 2041, Torre E, 18° andar - São Paulo CEP: 04543-011| Fale conosco| ajuda-amazon@amazon.com.br </p>
+<p>Formas de pagamento aceitas: cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito (Visa e Elo), Boleto e Pix.</p> 
+        </section>
+
+    </footer>
 </body>
 </html>
