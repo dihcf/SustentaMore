@@ -218,7 +218,7 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 50PX;
+    gap: 20PX;
     padding: 10px 0px;
     font-size: 5rem;
 }
@@ -436,7 +436,7 @@ footer{
     color: #000;
 }
 #bottomFooter{
-  width: 100%;
+   width: 100%;
     padding:20px 20px;
     font-size: 1.3rem;
     display: flex;
@@ -450,6 +450,9 @@ footer{
     line-height: 25px;
     color: grey;
     font-size: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 hr{
   width: 97%;
