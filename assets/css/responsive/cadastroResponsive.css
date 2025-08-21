@@ -1,0 +1,35 @@
+
+/* --- Ajuste para celular --- */
+@media (max-width: 768px) {
+  #areaPhotos {
+    display: none;
+  }
+
+  #areaLogin {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  /* Faz as logos aparecerem antes do formulário */
+  #images {
+    order: -1; 
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  #images img {
+    width: 60px;
+  }
+
+  #formCadastro {
+    order: 2;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  #formCadastro h3 {
+    text-align: center;
+  }
+}
