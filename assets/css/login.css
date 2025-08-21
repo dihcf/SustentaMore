@@ -1,0 +1,194 @@
+main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+#areaLogin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  gap: 50px;
+}
+#formCadastro{
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#formCadastro h3{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  width: 100%;
+}
+.conteinerInput {
+  font-size: 2.5rem;
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+}
+
+.conteinerInput label{
+ font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+    font-style: normal;
+}
+
+.conteinerInput input:not([type="checkbox"]){
+  width: 400px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  
+  box-shadow: 1px 1px 5px rgb(189, 187, 187);
+}
+.conteinerButton{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.conteinerButton .buttonEntrar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.conteinerButton .buttonEntrar button{
+  width: 70%;
+  height: 25px;
+  border-radius: 7px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  background-color: #3A5B22;
+  font-weight: bold;
+  font-size: .9rem;
+   box-shadow: 1px 1px 5px rgb(189, 187, 187);
+}
+
+.termos{
+  display: flex;
+  align-items: center;
+  gap:4px;
+}
+.termos label {
+  font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+  font-size: .8rem;
+}
+.conteinerButton span{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.conteinerButton span .otherLogins{
+  width: 180px;
+  height: 25px;
+  background: rgb(255, 255, 255);    
+  border-radius: 7px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .9rem;
+  box-shadow: 1px 1px 5px rgb(189, 187, 187);
+}
+#areaLogin p,#areaLogin p a{
+  align-self: center;
+    font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+#images{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 100%;
+}
+#images img:nth-child(0n){
+  width: 80px;
+}
+
+#areaPhotos{
+  height: 100vh;
+  width: 50%;
+  border-radius: 30px 0 0px 30px;
+}
+
+  .slideshow-wrapper {
+    position: relative;
+  width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+      border-radius: 30px 0 0px 30px;
+  }
+  .slideshow {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    transition: transform 0.6s ease;
+  }
+  .slide {
+    width: 20%;
+    transition: opacity 0.5s;
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  input[type="radio"] {
+    display: none;
+  }
+  #slide1:checked ~ .slideshow {
+    transform: translateX(0%);
+  }
+  #slide2:checked ~ .slideshow {
+    transform: translateX(-20%);
+  }
+  #slide3:checked ~ .slideshow {
+    transform: translateX(-40%);
+  }
+  #slide4:checked ~ .slideshow {
+    transform: translateX(-60%);
+  }
+  #slide5:checked ~ .slideshow {
+    transform: translateX(-80%);
+  }
+  .navigation-manual {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .manual-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  #slide1:checked ~ .navigation-manual label[for="slide1"],
+  #slide2:checked ~ .navigation-manual label[for="slide2"],
+  #slide3:checked ~ .navigation-manual label[for="slide3"],
+  #slide4:checked ~ .navigation-manual label[for="slide4"],
+  #slide5:checked ~ .navigation-manual label[for="slide5"] {
+    background: #333;
+  }

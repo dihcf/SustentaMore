@@ -11,3 +11,4 @@ const totalSlides = 5;
 
     document.getElementById(`slide${currentSlide}`).checked = true;
   }, 4000); // Troca de slide a cada 4 segundos
+
