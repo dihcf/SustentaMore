@@ -1,8 +1,8 @@
 html, body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;   /* evita scroll lateral */
-  overflow-y: hidden;   /* evita scroll vertical desnecessário */
+  overflow-x: hidden;   
+  overflow-y: hidden;   
 }
 main{
   width: 100%;
@@ -49,12 +49,12 @@ main{
 
 .conteinerInput input:not([type="checkbox"]) {
   width: 100%;
-  max-width: 400px;  /* limite para desktop */
+  max-width: 400px;  
   height: 35px;
   border: none;
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgb(189, 187, 187);
-  padding: 5px 10px; /* para o texto não colar na borda */
+  padding: 5px 10px; 
 }
 .conteinerButton{
   width: 100%;
