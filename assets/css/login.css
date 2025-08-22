@@ -1,17 +1,30 @@
-main{
+html, body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  overflow-x: hidden; /* impede scroll lateral */
+  overflow-y: hidden; /* impede scroll vertical desnecessário */
+}
+
+main {
+  width: 100%;
+  min-height: 100vh; /* antes estava height:100vh */
   display: flex;
 }
 
-#areaLogin{
+#areaLogin {
+  width: 50%;
+  min-height: 100vh; /* troca height:100vh por min-height */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
-  height: 100vh;
   gap: 50px;
+}
+
+#areaPhotos {
+  width: 50%;
+  min-height: 100vh; /* evita estourar no mobile */
+  border-radius: 30px 0 0px 30px;
 }
 #formCadastro{
   width: 400px;
@@ -120,11 +133,6 @@ main{
   width: 80px;
 }
 
-#areaPhotos{
-  height: 100vh;
-  width: 50%;
-  border-radius: 30px 0 0px 30px;
-}
 
   .slideshow-wrapper {
     position: relative;
