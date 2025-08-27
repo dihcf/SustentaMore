@@ -48,12 +48,17 @@
       top: 50%;
       transform: translateY(-50%)
   }
-  #sectionLogin{
+  #actionsItems{
+    display: flex;
+    width: 200px;
+    justify-content: space-between
+  }
+ #actionsItems #sectionLogin{
       display: flex;
       justify-content: center;
       align-items: center;
   }
-  #sectionLogin img{
+  #actionsItems #sectionLogin img{
       width: 25px;
       height: 25px;
   }
@@ -123,17 +128,17 @@
       text-transform: uppercase;
       color: rgba(120, 117, 117, 0.731);
   }
-  #cartArea{
+  #actionsItems #cartArea{
       display: flex;
       align-items: center;
   }
-  #cartArea #cart {
+  #actionsItems #cartArea #cart {
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
   }
-  #cartArea #cart p {
+  #actionsItems #cartArea #cart p {
       position: absolute;
       top: -8px;
       right: -8px;
@@ -150,7 +155,7 @@
   }
   .slideshow-wrapper {
     position: relative;
-  width: 100%;
+    width: 100%;
     max-width: 100%;
     height: 350px;
     margin: auto;
