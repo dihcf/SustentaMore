@@ -102,34 +102,76 @@
 
 /* Celulares pequenos (até 480px) */
 @media (max-width: 480px) {
-    #topHeader {
+      #topHeader {
     flex-direction: column;
     height: auto;
     padding: 10px;
     gap: 10px;
   }
+  #logo {
+    order: 1;
+    justify-content: center;
+  }
+
+  #actionsItems {
+    order: 2;
+  }
+
+  #searchArea {
+    order: 3;
+  }
   #searchArea input {
     width: 100%;
-    font-size: 1rem;
   }
-  #searchArea img{
-    left: 3px;
+#actionsItems{
+  align-items: center;
+  width: 100%; 
+  justify-content: end;
+  flex-direction: row-reverse;
+}
+
+  #sectionLogin{
+    width: 150px;
   }
-  #logo img {
-    width: 40px !important;
+  #cartArea{
+    width: 50px;
+  }
+  #sectionLogin p {
+    font-size: 1.1rem;
+  }
+  #menuNavigation {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  #menuNavigation #menuCategorias {
+    flex-wrap: wrap;
+    gap: 15px;
   }
   .slideshow-wrapper {
-    height: 150px;
+    height: 200px;
+  }
+  #conteinerCategory {
+    gap: 15px;
+  }
+   #conteinerNovidades, #conteinerRecomendado{
+    justify-content: space-around;
+  }
+  .categoryitem {
+    width: 100px;
+    flex: 0 0 100px;
+    font-size: 1.3rem;
   }
   .itemNovidades {
-    width: 100%;
-    max-width: 300px;
+    width: 45%;
+    height: auto;
   }
-  .infoProduto p {
-    font-size: 1.2rem;
-  }
-  #bottomFooter p {
-    font-size: 0.9rem;
+  #topFooter {
+    flex-direction: column;
+    gap: 20px;
     text-align: center;
+  }
+  .areasFooter {
+    width: 100%;
   }
 }
