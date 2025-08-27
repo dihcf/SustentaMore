@@ -1,144 +1,101 @@
-/* ================== RESPONSIVIDADE ================== */
-
-/* Telas até 1200px */
-@media (max-width: 1200px) {
-  #searchArea input {
-    width: 400px;
-  }
-  #menuNavigation #menuCategorias {
-    width: 100%;
-    gap: 5px;
-    flex-wrap: wrap;
-  }
-  #menuNavigation #menuCategorias li a {
-    font-size: 1.5rem;
-  }
-}
-
-/* Telas até 992px (tablet na horizontal / notebook pequeno) */
-@media (max-width: 992px) {
+/* ================== CELULARES ================== */
+@media (max-width: 576px) {
+  /* HEADER */
   #topHeader {
-    flex-wrap: wrap;
-    height: auto;
-    padding: 10px;
-    gap: 15px;
-  }
-
-  #searchArea input {
-    width: 300px;
-    height: 40px;
-  }
-
-  #sectionLogin p {
-    font-size: 1.1rem;
-  }
-
-  #menuNavigation {
     flex-direction: column;
-    height: auto;
-    padding: 5px 0;
-  }
-
-  #localEntrega {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-  }
-
-  #menuNavigation #menuCategorias {
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
     gap: 10px;
-    width: 100%;
+    padding: 10px;
+    height: auto;
   }
 
-  .slideshow-wrapper {
-    height: 250px;
-  }
-
-  .itemNovidades {
-    width: 160px;
-    height: 260px;
-  }
-}
-
-/* Telas até 768px (tablet na vertical / celulares grandes) */
-@media (max-width: 768px) {
   #searchArea {
     width: 100%;
     justify-content: center;
   }
   #searchArea input {
     width: 90%;
+    font-size: 1rem;
+    height: 36px;
   }
 
-  #menuNavigation #menuCategorias li {
-    width: auto;
-    padding: 5px;
-  }
-
-  #conteinerCategory {
-    gap: 15px;
-  }
-  .categoryitem {
-    width: 100px;
-    flex: 0 0 100px;
-    font-size: 1.4rem;
-  }
-  .categoryitem img {
-    width: 35px;
-  }
-
-  .itemNovidades {
-    width: 45%;
-    max-width: 180px;
-  }
-
-  #topFooter {
-    flex-direction: column;
-    gap: 25px;
-    font-size: 2.5rem;
-  }
-  .areasFooter {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-/* Telas até 576px (celulares médios/pequenos) */
-@media (max-width: 576px) {
-  #topHeader {
+  #sectionLogin {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    gap: 10px;
+    font-size: 0.9rem;
   }
 
-  #searchArea input {
-    width: 95%;
-    font-size: 1.1rem;
+  /* MENU */
+  #menuNavigation {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 0;
+    height: auto;
   }
-
   #menuNavigation #menuCategorias {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
   }
   #menuNavigation #menuCategorias li a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    padding: 5px 8px;
   }
 
+  /* SLIDESHOW */
   .slideshow-wrapper {
-    height: 200px;
+    height: 180px;
+  }
+
+  /* CATEGORIAS */
+  #conteinerCategory {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .categoryitem {
+    width: 90px;
+    flex: 0 0 90px;
+    font-size: 1.1rem;
+  }
+  .categoryitem img {
+    width: 30px;
+  }
+
+  /* PRODUTOS (NOVIDADES) */
+  #conteinerNovidades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    justify-items: center;
   }
 
   .itemNovidades {
     width: 100%;
-    max-width: 250px;
+    max-width: 160px;
+    height: auto;
   }
 
-  #bottomFooter p {
+  .itemNovidades img {
+    max-height: 150px;
+    object-fit: contain;
+  }
+
+  /* FOOTER */
+  #topFooter {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2rem;
+  }
+  .areasFooter {
     text-align: center;
-    font-size: 0.9rem;
+    width: 100%;
+  }
+  #bottomFooter p {
+    font-size: 0.8rem;
+    text-align: center;
   }
 }
