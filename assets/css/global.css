@@ -8,8 +8,10 @@
         list-style: none;
         text-decoration: none;
         outline: none;
+        -webkit-tap-highlight-color: transparent;
     }
     body{
         background-color: #fafafa ;
          overflow-x: hidden; /* <-- evita rolagem lateral */
+
     }
