@@ -7,11 +7,13 @@
         font-size: 62.5%; /* 1rem = 10px */
         list-style: none;
         text-decoration: none;
-        outline: none;
-        -webkit-tap-highlight-color: transparent;
+      -webkit-tap-highlight-color: transparent; /* Remove efeito azul no toque */
+          outline: none;                            /* Remove contorno */
+          user-select: none;                        /* Evita seleção de texto */
     }
     body{
         background-color: #fafafa ;
          overflow-x: hidden; /* <-- evita rolagem lateral */
 
     }
+
