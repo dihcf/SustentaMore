@@ -1,23 +1,23 @@
+/* ===================== RESPONSIVIDADE ===================== */
+
+/* Tablets e telas menores (até 1024px) */
 @media (max-width: 1024px) {
   #searchArea input {
     width: 400px;
+    font-size: 1.1rem;
   }
-
   #menuNavigation #menuCategorias {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
   }
-
   #menuNavigation #menuCategorias li {
     width: auto;
     padding: 5px 10px;
   }
-
   .slideshow-wrapper {
     height: 250px;
   }
-
   .itemNovidades {
     width: 160px;
     height: 260px;
@@ -32,7 +32,6 @@
     padding: 10px;
     gap: 10px;
   }
-
   #logo {
     order: 1;
     justify-content: center;
@@ -40,69 +39,62 @@
 
   #actionsItems {
     order: 2;
-    align-items: center;
-    width: 100%;
-    justify-content: end;
-    flex-direction: row-reverse;
   }
 
   #searchArea {
     order: 3;
   }
+  #searchArea input {
+    width: 100%;
+  }
+#actionsItems{
+  align-items: center;
+  width: 100%; 
+  justify-content: end;
+  flex-direction: row-reverse;
+}
 
-  #sectionLogin {
+  #sectionLogin{
     width: 150px;
   }
-
-  #cartArea {
+  #cartArea{
     width: 50px;
   }
-
   #sectionLogin p {
     font-size: 1.1rem;
   }
-
   #menuNavigation {
     flex-direction: column;
     height: auto;
     margin-bottom: 40px;
   }
-
   #menuNavigation #menuCategorias {
     flex-wrap: wrap;
     gap: 15px;
   }
-
   .slideshow-wrapper {
     height: 200px;
   }
-
   #conteinerCategory {
     gap: 15px;
   }
-
-  #conteinerNovidades,
-  #conteinerRecomendado {
+   #conteinerNovidades, #conteinerRecomendado{
     justify-content: space-around;
   }
-
   .categoryitem {
     width: 100px;
     flex: 0 0 100px;
     font-size: 1.3rem;
   }
-
   .itemNovidades {
     width: 45%;
     height: auto;
   }
-
   #topFooter {
     flex-direction: column;
     gap: 20px;
     text-align: center;
   }
-
   .areasFooter {
     width: 100%;
   }
@@ -111,30 +103,26 @@
 /* Celulares pequenos (até 480px) */
 @media (max-width: 480px) {
   #searchArea input {
+    width: 100%;
     font-size: 1rem;
   }
-
-  #searchArea img {
-    left: 3px;
+  #searchArea img{
+      right: 10px;
+  left: auto; 
   }
-
   #logo img {
     width: 40px !important;
   }
-
   .slideshow-wrapper {
     height: 150px;
   }
-
   .itemNovidades {
-    width: 100%;
-    max-width: 300px;
+     width: 48%;
+  max-width: unset;
   }
-
   .infoProduto p {
     font-size: 1.2rem;
   }
-
   #bottomFooter p {
     font-size: 0.9rem;
     text-align: center;
