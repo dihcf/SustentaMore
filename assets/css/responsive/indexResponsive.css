@@ -116,9 +116,14 @@
   .slideshow-wrapper {
     height: 150px;
   }
-  .itemNovidades {
-     width: 48%;
-  max-width: unset;
+  
+  #conteinerNovidades {
+    justify-content: space-between;
+  }
+
+ .itemNovidades {
+    width: 48%; /* permite 2 por linha */
+    max-width: none; /* garante que não estoure */
   }
   .infoProduto p {
     font-size: 1.2rem;
