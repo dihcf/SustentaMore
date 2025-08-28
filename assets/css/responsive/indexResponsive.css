@@ -116,6 +116,10 @@
   .slideshow-wrapper {
     height: 150px;
   }
+  .carousel-wrapper .arrow {
+    left: 5px;  /* ou right: 5px; conforme o lado */
+    transform: none;
+  }
   
   #conteinerNovidades {
     justify-content: space-between;
@@ -133,3 +137,4 @@
     text-align: center;
   }
 }
+
