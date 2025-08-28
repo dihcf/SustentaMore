@@ -464,14 +464,6 @@
     width: 97%;
   }
 
-.slideshow-wrapper,
-#conteinerCategory,
-#topHeader,
-#menuNavigation,
-#areasPodutos {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
 
 
 
