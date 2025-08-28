@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const hearts = document.querySelectorAll('.favadd .imagefav:first-child');
 
     hearts.forEach(heart => {
-      heart.addEventListener("click", () => {
+      heart.addEventListener("click", (event) => {
+        event.stopPropagation();
         const isFavorited = heart.dataset.favorited === "true";
 
         heart.src = isFavorited
@@ -19,7 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let cartCount = parseInt(cartCountEl.textContent) || 0;
 
   carts.forEach(cart => {
-    cart.addEventListener("click", () => {
+    cart.addEventListener("click", (event) => {
+         event.stopPropagation();
       const isFavorited = cart.dataset.favorited === "true";
 
       // Alternar imagem e atualizar contador
