@@ -102,6 +102,13 @@
 
 /* Celulares pequenos (até 480px) */
 @media (max-width: 480px) {
+    #topHeader {
+    width:100%;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
   #searchArea input {
     width: 100%;
     font-size: 1rem;
@@ -127,3 +134,4 @@
     text-align: center;
   }
 }
+
