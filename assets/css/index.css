@@ -389,6 +389,11 @@
   .imagefav{
     width: 23px;
   }
+.imagefav:focus,
+.imagefav:active {
+  outline: none;
+  box-shadow: none;
+}
   .favadd{
     display: flex;
     gap: 10px;
@@ -464,6 +469,7 @@
   hr{
     width: 97%;
   }
+
 
 
 
