@@ -16,4 +16,10 @@
          overflow-x: hidden; /* <-- evita rolagem lateral */
 
     }
-
+    input {
+        padding-left: 5px;
+        text-transform: uppercase;
+         font-family: "Montserrat", sans-serif;
+         font-weight: 600;
+         font-size: 1rem;
+    }

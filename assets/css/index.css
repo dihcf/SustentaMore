@@ -267,6 +267,10 @@
     color: grey;
     flex: 0 0 130px; /* largura fixa para scroll controlado */
   }
+  .doar{
+    width: 40px;
+    margin-left: 7px;
+  }
   .categoryitem img {
     width: 45px;
   }
@@ -469,7 +473,6 @@
   hr{
     width: 97%;
   }
-
 
 
 
