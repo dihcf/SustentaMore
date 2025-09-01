@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/categorias.css">
     <link rel="stylesheet" href="assets/css/responsive/categoriasResponsive.css">
-    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/filter.js"></script>
 </head>
 <body>
     <header>
@@ -71,31 +71,31 @@
     <!-- Ordenar -->
     <div class="filtro">
       <h4>Ordenar por</h4>
-      <select>
-        <option>Preço: do menor para o maior</option>
-        <option>Preço: do maior para o menor</option>
-        <option>Classificação: da melhor para a pior</option>
-        <option>Classificação: da pior para a melhor</option>
-      </select>
+     <select id="ordenarSelect">
+  <option value="menorPreco">Preço: do menor para o maior</option>
+  <option value="maiorPreco">Preço: do maior para o menor</option>
+  <option value="melhorClassificacao">Classificação: da melhor para a pior</option>
+  <option value="piorClassificacao">Classificação: da pior para a melhor</option>
+</select>
     </div>
 
-    <!-- Preço mínimo -->
-    <div class="filtro">
-      <h4>Preço mínimo</h4>
-      <div class="input-group">
-        <span>R$</span>
-        <input type="number" placeholder="Mín.">
-      </div>
-    </div>
+   <!-- Preço mínimo -->
+<div class="filtro">
+  <h4>Preço mínimo</h4>
+  <div class="input-group">
+    <span>R$</span>
+    <input type="number" id="precoMin" placeholder="Mín.">
+  </div>
+</div>
 
-    <!-- Preço máximo -->
-    <div class="filtro">
-      <h4>Preço máximo</h4>
-      <div class="input-group">
-        <span>R$</span>
-        <input type="number" placeholder="Máx.">
-      </div>
-    </div>
+<!-- Preço máximo -->
+<div class="filtro">
+  <h4>Preço máximo</h4>
+  <div class="input-group">
+    <span>R$</span>
+    <input type="number" id="precoMax" placeholder="Máx.">
+  </div>
+</div>
 
     <!-- Condição -->
     <div class="filtro">
@@ -131,7 +131,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 100,00</p>
                                 </div>
 
                                 <div class="favadd">
@@ -169,7 +169,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 32,22</p>
                                 </div>
 
                                 <div class="favadd">
@@ -188,7 +188,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 55,70</p>
                                 </div>
 
                                 <div class="favadd">
@@ -207,7 +207,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 152,37</p>
                                 </div>
 
                                 <div class="favadd">
@@ -226,7 +226,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 200,67</p>
                                 </div>
 
                                 <div class="favadd">
@@ -245,7 +245,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 66,77</p>
                                 </div>
 
                                 <div class="favadd">
@@ -264,7 +264,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 1,67</p>
                                 </div>
 
                                 <div class="favadd">
@@ -283,7 +283,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 8,29</p>
                                 </div>
 
                                 <div class="favadd">
@@ -302,7 +302,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 23,38</p>
                                 </div>
 
                                 <div class="favadd">
@@ -321,7 +321,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 1,74</p>
                                 </div>
 
                                 <div class="favadd">
@@ -340,7 +340,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 712,67</p>
                                 </div>
 
                                 <div class="favadd">
@@ -359,7 +359,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 782,47</p>
                                 </div>
 
                                 <div class="favadd">
@@ -378,7 +378,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 18,99</p>
                                 </div>
 
                                 <div class="favadd">
@@ -397,7 +397,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 12,22</p>
                                 </div>
 
                                 <div class="favadd">
@@ -416,7 +416,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 16,16</p>
                                 </div>
 
                                 <div class="favadd">
@@ -435,7 +435,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 88,87</p>
                                 </div>
 
                                 <div class="favadd">
@@ -454,7 +454,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 234,67</p>
                                 </div>
 
                                 <div class="favadd">
@@ -473,7 +473,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 329,00</p>
                                 </div>
 
                                 <div class="favadd">
@@ -492,7 +492,7 @@
                         </div>
                             <div class="price">
                                 <div class="pricetext">
-                                         <p>R$ 78,67</p>
+                                         <p>R$ 21,00</p>
                                 </div>
 
                                 <div class="favadd">
