@@ -318,7 +318,7 @@
     flex-wrap: wrap;
   }
   .itemNovidades{
-    width: 190px;
+    width: 200px;
     height: 290px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.57);
@@ -332,6 +332,7 @@
     flex-direction: column;
     justify-content: space-around;
     cursor: pointer;
+    padding: 10px 0;
   } 
   .imageNovidades{
   width: 130px;
