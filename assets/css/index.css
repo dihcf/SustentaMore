@@ -304,10 +304,10 @@
   section{
     width: 100%;  
   }
-  #novidades p{
+  #novidades {
     padding: 10px  0px 0px 20px ;
   }
-  #recomendados p{
+  #recomendados {
     padding: 30px  0px 0px 20px 
   }
   #conteinerNovidades, #conteinerRecomendado{
