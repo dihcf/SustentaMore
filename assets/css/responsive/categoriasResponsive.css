@@ -15,6 +15,13 @@
     width: auto;
     padding: 5px 10px;
   }
+  .slideshow-wrapper {
+    height: 250px;
+  }
+  .itemNovidades {
+    width: 160px;
+    height: 260px;
+  }
 }
 
 /* Celulares médios (até 768px) */
@@ -65,6 +72,24 @@
     flex-wrap: wrap;
     gap: 15px;
   }
+  .slideshow-wrapper {
+    height: 200px;
+  }
+  #conteinerCategory {
+    gap: 15px;
+  }
+   #conteinerNovidades, #conteinerRecomendado{
+    justify-content: space-around;
+  }
+  .categoryitem {
+    width: 100px;
+    flex: 0 0 100px;
+    font-size: 1.3rem;
+  }
+  .itemNovidades {
+    width: 45%;
+    height: auto;
+  }
   #topFooter {
     flex-direction: column;
     gap: 20px;
@@ -94,6 +119,25 @@
   }
   #logo img {
     width: 40px !important;
+  }
+  .slideshow-wrapper {
+    height: 150px;
+  }
+  .carousel-wrapper .arrow {
+    left: 5px;  /* ou right: 5px; conforme o lado */
+    transform: none;
+  }
+  
+  #conteinerNovidades {
+    justify-content: space-between;
+  }
+
+ .itemNovidades {
+    width: 48%; /* permite 2 por linha */
+    max-width: none; /* garante que não estoure */
+  }
+  .infoProduto p {
+    font-size: 1.2rem;
   }
   #bottomFooter p {
     font-size: 0.9rem;
