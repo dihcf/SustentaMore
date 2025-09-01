@@ -305,15 +305,16 @@
     width: 100%;  
   }
   #novidades {
-    padding: 10px  0px 0px 20px ;
+  
+    padding: 0px  10px 0px 10px;
   }
   #recomendados {
-    padding: 30px  0px 0px 20px 
+    padding: 30px  10px 0px 10px;
   }
   #conteinerNovidades, #conteinerRecomendado{
     width: 100%;  
     display: flex;
-    padding: 20px 10px;
+    padding: 20px 0px;
     gap: 10px ;
     flex-wrap: wrap;
   }
