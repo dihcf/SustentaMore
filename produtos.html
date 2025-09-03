@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de vendas, trocas e doações de intens no municipio de General Sampaio. Com Foco em itens Reutilizaveis">
+    <link rel="icon" href="assets/images/favicon/favicon.ico">
+    <title>Sustenta+</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/produtos.css">
+    <link rel="stylesheet" href="assets/css/responsive/produtosResponsive.css">
+    <script src="assets/js/filter.js"></script>
+</head>
+<body>
+    <header>
+      <div id="topHeader">    
+            <span id="logo">
+                <img src="assets/images/logos/sustenta_logo.png" alt="" class="logo">
+                <img src="assets/images/logos/jose_bezerra_logo_transparent.png" alt="" class="logo">
+                <img src="assets/images/logos/generalSampaio.png" alt="" class="logo">
+                <img src="assets/images/logos/general_cientifico_logo_transparent.png" alt="" class="logo">
+            </span>
+            
+            <span id="searchArea">
+                <input type="text" placeholder="Buscar no Sustenta+">
+                <img src="assets/images/icons/search.png" alt="">
+            </span>
+            
+            <div id="actionsItems">
+             <span id="cartArea">
+                <div id="cart">
+                <p id="cart-count">0</p>
+                <img src="assets/images/icons/cart.png" alt="">
+                </div>
+             </span>
+
+            <div id="sectionLogin">
+                <img src="assets/images/icons/login.png" alt="">
+                <div id="textSectionLogin">
+                    <p>MINHA CONTA</p>
+                    <span>
+                        <a href="login.html">Entrar</a> <i>|</i>
+                        <a href="cadastro.html">Cadastra-se</a> 
+                    </span>
+                </div>
+            </div>
+            </div>
+      </div>  
+
+        <nav id="menuNavigation">
+           <div id="localEntrega">
+                <img src="assets/images/icons/mapa.png" alt="" id="mapaIcon">
+                <span id="localText">
+                    <p id="localTextP1">Local de Entrega</p>
+                    <p>Rua Manoel Soares Guimarães - Nº 236, Centro</p>
+                </span>
+            </div>
+            
+            <ul id="menuCategorias">
+                <li><a href="">Doação</a></li>
+                <li><a href="">Troca</a></li>
+                <li><a href="">Vendas</a></li>
+                <li><a href="">Parcerias</a></li>
+                <li><a href="">Eventos</a></li>
+                <li><a href="">Ajuda</a></li>
+                <li><a href="">Sobre Nos</a></li>
+            </ul>
+        </nav>
+   
+    </header>
+             <main>
+                <div id="container-venda">    <!-- Breadcrumb -->
+ 
+    <!-- Product Section -->
+    <div class="container">
+        <div class="product-section">
+            <div class="product-grid">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image-container">
+                        <img id="main-image" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=600&fit=crop" alt="Tênis Nike Air Max 270" class="main-image">
+                    </div>
+                    <div class="thumbnail-grid">
+                        <button class="thumbnail active" data-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=600&fit=crop">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=150&h=150&fit=crop" alt="Vista 1">
+                        </button>
+                        <button class="thumbnail" data-image="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600&h=600&fit=crop">
+                            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=150&h=150&fit=crop" alt="Vista 2">
+                        </button>
+                        <button class="thumbnail" data-image="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&h=600&fit=crop">
+                            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=150&h=150&fit=crop" alt="Vista 3">
+                        </button>
+                        <button class="thumbnail" data-image="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=600&h=600&fit=crop">
+                            <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=150&h=150&fit=crop" alt="Vista 4">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div>
+                        <h1 class="product-title">Nike Air Max 270</h1>
+                        <p class="product-subtitle">Tênis Masculino - Casual e Esportivo</p>
+                        
+                        <div class="rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-text">(4.8) • 127 avaliações</span>
+                        </div>
+
+                        <div class="price-section">
+                            <span class="current-price">R$ 299,90</span>
+                            <span class="old-price">R$ 399,90</span>
+                            <span class="discount-badge">25% OFF</span>
+                        </div>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="option-section">
+                        <h3 class="option-title">Cor</h3>
+                        <div class="color-options">
+                            <button class="color-option color-black active" data-color="Preto"></button>
+                            <button class="color-option color-white" data-color="Branco"></button>
+                            <button class="color-option color-blue" data-color="Azul"></button>
+                            <button class="color-option color-red" data-color="Vermelho"></button>
+                        </div>
+                        <p class="selected-info">Cor selecionada: <span id="selected-color" class="selected-value">Preto</span></p>
+                    </div>
+
+                    <!-- Size Selection -->
+                    <div class="option-section">
+                        <h3 class="option-title">Tamanho</h3>
+                        <div class="size-grid">
+                            <button class="size-option" data-size="38">38</button>
+                            <button class="size-option" data-size="39">39</button>
+                            <button class="size-option" data-size="40">40</button>
+                            <button class="size-option" data-size="41">41</button>
+                            <button class="size-option" data-size="42">42</button>
+                            <button class="size-option" data-size="43">43</button>
+                            <button class="size-option" data-size="44">44</button>
+                            <button class="size-option" data-size="45">45</button>
+                        </div>
+                        <p class="selected-info">Tamanho selecionado: <span id="selected-size" class="selected-value">Nenhum</span></p>
+                    </div>
+
+                    <!-- Quantity -->
+                    <div class="option-section">
+                        <h3 class="option-title">Quantidade</h3>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn" id="decrease-qty">-</button>
+                            <span id="quantity" class="quantity-display">1</span>
+                            <button class="quantity-btn" id="increase-qty">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Add to Cart Button -->
+                    <button id="add-to-cart" class="add-to-cart-btn">
+                        Adicionar ao Carrinho
+                    </button>
+
+                    <!-- Product Features -->
+                    <div class="features-box">
+                        <h3 class="features-title">Características do Produto</h3>
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <span class="feature-check">✓</span>
+                                <span>Tecnologia Air Max para máximo conforto</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-check">✓</span>
+                                <span>Material respirável e durável</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-check">✓</span>
+                                <span>Sola antiderrapante</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-check">✓</span>
+                                <span>Garantia de 1 ano</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Shipping Info -->
+                    <div class="shipping-info">
+                        <h3 class="option-title">Entrega</h3>
+                        <div class="shipping-list">
+                            <p class="shipping-item">
+                                <span>🚚</span>
+                                <span>Frete grátis para compras acima de R$ 199</span>
+                            </p>
+                            <p class="shipping-item">
+                                <span>📦</span>
+                                <span>Entrega em 2-5 dias úteis</span>
+                            </p>
+                            <p class="shipping-item">
+                                <span>🔄</span>
+                                <span>Troca grátis em 30 dias</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Description -->
+            <div class="content-section">
+                <h2 class="section-title">Descrição do Produto</h2>
+                <div>
+                    <p >
+                        O Nike Air Max 270 combina estilo e performance em um design inovador. Com a maior unidade Air Max já criada pela Nike, oferece amortecimento excepcional e visual marcante.
+                   
+                        Desenvolvido para o uso diário, este tênis apresenta cabedal em mesh respirável que mantém os pés frescos durante todo o dia. A sola de borracha durável garante tração superior em diversas superfícies.
+                   
+                        Perfeito para atividades casuais, caminhadas e treinos leves. O design moderno e versátil combina com qualquer look, desde o mais esportivo até o casual urbano.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Reviews Section -->
+            <div class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title">Avaliações dos Clientes</h2>
+                    <button id="toggle-review-form" class="btn btn-primary">Escrever Avaliação</button>
+                </div>
+
+                <!-- Review Summary -->
+                <div class="review-summary">
+                    <div class="rating-overview">
+                        <div class="rating-score">4.8</div>
+                        <div class="rating-stars">★★★★★</div>
+                        <div class="rating-count">127 avaliações</div>
+                    </div>
+                    <div class="rating-breakdown">
+                        <div class="rating-row">
+                            <span class="rating-label">5★</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" style="width: 78%"></div>
+                            </div>
+                            <span class="rating-number">99</span>
+                        </div>
+                        <div class="rating-row">
+                            <span class="rating-label">4★</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" style="width: 15%"></div>
+                            </div>
+                            <span class="rating-number">19</span>
+                        </div>
+                        <div class="rating-row">
+                            <span class="rating-label">3★</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" style="width: 5%"></div>
+                            </div>
+                            <span class="rating-number">6</span>
+                        </div>
+                        <div class="rating-row">
+                            <span class="rating-label">2★</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" style="width: 2%"></div>
+                            </div>
+                            <span class="rating-number">2</span>
+                        </div>
+                        <div class="rating-row">
+                            <span class="rating-label">1★</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" style="width: 1%"></div>
+                            </div>
+                            <span class="rating-number">1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Form -->
+                <div id="review-form" class="form-container review-form hidden">
+                    <h3 class="form-title">Deixe sua avaliação</h3>
+                    <div class="form-group">
+                        <label class="form-label">Sua nota</label>
+                        <div class="rating-input" id="rating-input">
+                            <span class="rating-star" data-rating="1">★</span>
+                            <span class="rating-star" data-rating="2">★</span>
+                            <span class="rating-star" data-rating="3">★</span>
+                            <span class="rating-star" data-rating="4">★</span>
+                            <span class="rating-star" data-rating="5">★</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Seu nome</label>
+                        <input type="text" id="reviewer-name" class="form-input" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Sua avaliação</label>
+                        <textarea id="review-text" class="form-input form-textarea" placeholder="Conte sobre sua experiência com o produto..."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button id="submit-review" class="btn btn-primary">Enviar Avaliação</button>
+                        <button id="cancel-review" class="btn btn-secondary">Cancelar</button>
+                    </div>
+                </div>
+
+                <!-- Reviews List -->
+                <div id="reviews-list">
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="avatar avatar-blue">M</div>
+                            <div class="review-content">
+                                <div class="review-meta">
+                                    <h4 class="reviewer-name">Maria Silva</h4>
+                                    <div class="review-stars">★★★★★</div>
+                                    <span class="review-date">• há 2 dias</span>
+                                </div>
+                                <p class="review-text">
+                                    Excelente tênis! Super confortável e com ótimo acabamento. Uso para caminhadas diárias e está perfeito. A entrega foi rápida e o produto chegou em perfeitas condições.
+                                </p>
+                                <div class="review-actions">
+                                    <button class="like-btn">
+                                        <span>👍</span>
+                                        <span class="like-count">12</span>
+                                    </button>
+                                    <button class="reply-btn">Responder</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="avatar avatar-green">J</div>
+                            <div class="review-content">
+                                <div class="review-meta">
+                                    <h4 class="reviewer-name">João Santos</h4>
+                                    <div class="review-stars">★★★★★</div>
+                                    <span class="review-date">• há 1 semana</span>
+                                </div>
+                                <p class="review-text">
+                                    Produto de qualidade excepcional! O amortecimento é realmente muito bom e o design é lindo. Recomendo para quem busca conforto e estilo.
+                                </p>
+                                <div class="review-actions">
+                                    <button class="like-btn">
+                                        <span>👍</span>
+                                        <span class="like-count">8</span>
+                                    </button>
+                                    <button class="reply-btn">Responder</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="avatar avatar-purple">A</div>
+                            <div class="review-content">
+                                <div class="review-meta">
+                                    <h4 class="reviewer-name">Ana Costa</h4>
+                                    <div class="review-stars">★★★★☆</div>
+                                    <span class="review-date">• há 2 semanas</span>
+                                </div>
+                                <p class="review-text">
+                                    Muito bom! Único ponto é que achei que poderia ter mais opções de cores, mas a qualidade é indiscutível. Muito confortável para o dia a dia.
+                                </p>
+                                <div class="review-actions">
+                                    <button class="like-btn">
+                                        <span>👍</span>
+                                        <span class="like-count">5</span>
+                                    </button>
+                                    <button class="reply-btn">Responder</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-24">
+                    <button class="btn btn-primary">Ver todas as avaliações (127)</button>
+                </div>
+            </div>
+
+            <!-- Q&A Section -->
+            <div class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title">Perguntas e Respostas</h2>
+                    <button id="toggle-question-form" class="btn btn-success">Fazer Pergunta</button>
+                </div>
+
+                <!-- Question Form -->
+                <div id="question-form" class="form-container question-form hidden">
+                    <h3 class="form-title">Faça sua pergunta</h3>
+                    <div class="form-group">
+                        <label class="form-label">Seu nome</label>
+                        <input type="text" id="questioner-name" class="form-input" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Sua pergunta</label>
+                        <textarea id="question-text" class="form-input form-textarea" placeholder="Digite sua pergunta sobre o produto..."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button id="submit-question" class="btn btn-success">Enviar Pergunta</button>
+                        <button id="cancel-question" class="btn btn-secondary">Cancelar</button>
+                    </div>
+                </div>
+
+                <!-- Questions List -->
+                <div id="questions-list">
+                    <div class="question-item">
+                        <div class="question-header">
+                            <div class="qa-badge question-badge">P</div>
+                            <span class="questioner-name">Carlos Oliveira</span>
+                            <span class="question-date">• há 3 dias</span>
+                        </div>
+                        <p class="question-text">Este tênis é indicado para corrida ou apenas para caminhada?</p>
+                        <div class="answer">
+                            <div class="answer-meta">
+                                <div class="qa-badge answer-badge">R</div>
+                                <span class="store-name">SportShop</span>
+                                <span class="question-date">• há 2 dias</span>
+                            </div>
+                            <p class="answer-text">O Nike Air Max 270 é ideal para caminhadas e atividades casuais. Para corrida, recomendamos modelos específicos da linha Nike Running. Este modelo foca no conforto para uso diário.</p>
+                        </div>
+                    </div>
+
+                    <div class="question-item">
+                        <div class="question-header">
+                            <div class="qa-badge question-badge">P</div>
+                            <span class="questioner-name">Fernanda Lima</span>
+                            <span class="question-date">• há 1 semana</span>
+                        </div>
+                        <p class="question-text">O tamanho é fiel? Normalmente uso 38, devo pedir o mesmo número?</p>
+                        <div class="answer">
+                            <div class="answer-meta">
+                                <div class="qa-badge answer-badge">R</div>
+                                <span class="store-name">SportShop</span>
+                                <span class="question-date">• há 6 dias</span>
+                            </div>
+                            <p class="answer-text">Sim, o tamanho é fiel ao padrão brasileiro. Se você normalmente usa 38, pode pedir o mesmo número com segurança. O modelo tem bom espaço interno.</p>
+                        </div>
+                    </div>
+
+                    <div class="question-item">
+                        <div class="question-header">
+                            <div class="qa-badge question-badge">P</div>
+                            <span class="questioner-name">Roberto Silva</span>
+                            <span class="question-date">• há 2 semanas</span>
+                        </div>
+                        <p class="question-text">Qual é o material da sola? É antiderrapante mesmo?</p>
+                        <div class="answer">
+                            <div class="answer-meta">
+                                <div class="qa-badge answer-badge">R</div>
+                                <span class="store-name">SportShop</span>
+                                <span class="question-date">• há 1 semana</span>
+                            </div>
+                            <p class="answer-text">A sola é feita de borracha de alta qualidade com padrão antiderrapante. Oferece excelente aderência em superfícies secas e molhadas, garantindo segurança durante o uso.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-24">
+                    <button class="btn btn-success">Ver todas as perguntas (23)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h3 class="modal-title">Produto Adicionado!</h3>
+            <p class="modal-text">O item foi adicionado ao seu carrinho com sucesso.</p>
+            <button id="close-modal" class="btn btn-primary">Continuar Comprando</button>
+        </div>
+    </div>
+                </div>
+            </main>
+
+    <footer>
+        
+        <section id="topFooter">
+            <div class="areasFooter">
+                <h3>ATEDIMENTO AO CLIENTE</h3>
+                <div>
+                    <ul>
+                        <li class="ListFooter"><a href="">Central de Ajuda</a></li>
+                        <li class="ListFooter"><a href="">Metodos de Pagamento</a></li>
+                        <li class="ListFooter"><a href="">Garantia Sustenta+</a></li>
+                        <li class="ListFooter"><a href="">Fale Conosco</a></li>
+                        <li class="ListFooter"><a href="">Devolução e Reembolso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="areasFooter">
+                <h3>SOBRE O SUSTENTA+</h3>
+                <div>
+                    <ul>
+                        <li class="ListFooter"><a href="">Sobre Nós</a></li>
+                        <li class="ListFooter"><a href="">Politicas</a></li>
+                        <li class="ListFooter"><a href="">Politicas de Privacidade</a></li>
+                        <li class="ListFooter"><a href="">Venda no Sustenta+</a></li>
+                        <li class="ListFooter"><a href="">Programa de Afiliados do Sustenta+</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="areasFooter">
+                <h3>PAGAMENTOS</h3>
+                <div>
+                  <img src="https://down-br.img.susercontent.com/file/a65c5d1c5e556c6197f8fbd607482372" alt="">
+                  <img src="https://down-br.img.susercontent.com/file/95d849253f75d5e6e6b867af4f7c65aa" alt="">
+                  <img src="https://down-br.img.susercontent.com/file/5ee8fb5f33fdf1e42ea32b86f47f54c4" alt="">
+                  <img src="https://down-br.img.susercontent.com/file/br-11134258-7r98o-lxsovyseln7jc5" alt="">
+                  <img src="https://down-br.img.susercontent.com/file/44734b7fc343eb46237c2d90c6c9ca60" alt="">
+                  
+                </div>
+            </div>
+        </section>
+<hr>
+        <section id="bottomFooter">
+         <p> Amazon Serviços de Varejo do Brasil Ltda. | CNPJ 15.436.940/0001-03 </p>
+<p>Av. Juscelino Kubitschek, 2041, Torre E, 18° andar - São Paulo CEP: 04543-011| Fale conosco| ajuda-amazon@amazon.com.br </p>
+<p>Formas de pagamento aceitas: cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito (Visa e Elo), Boleto e Pix.</p> 
+        </section>
+
+    </footer>
+</body>
+<script src="assets/js/produtos.js"></script>
+</html>

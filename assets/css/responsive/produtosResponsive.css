@@ -1,0 +1,178 @@
+/* ===================== RESPONSIVIDADE ===================== */
+
+/* Tablets e telas menores (até 1024px) */
+@media (max-width: 1024px) {
+  #searchArea input {
+    width: 400px;
+    font-size: 1.1rem;
+  }
+  #menuNavigation #menuCategorias {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  #menuNavigation #menuCategorias li {
+    width: auto;
+    padding: 5px 10px;
+  }
+  .slideshow-wrapper {
+    height: 250px;
+  }
+  .itemNovidades {
+    width: 160px;
+    height: 260px;
+  }
+   .product-grid {
+    grid-template-columns: 1fr; /* imagens acima, info abaixo */
+  }
+
+  .product-title {
+    font-size: 2.5rem;
+  }
+
+  .current-price {
+    font-size: 2.5rem;
+  }
+}
+
+/* Celulares médios (até 768px) */
+@media (max-width: 768px) {
+  #topHeader {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+  #logo {
+    order: 1;
+    justify-content: center;
+  }
+
+  #actionsItems {
+    order: 2;
+  }
+
+  #searchArea {
+    order: 3;
+  }
+  #searchArea input {
+    width: 100%;
+  }
+#actionsItems{
+  align-items: center;
+  width: 100%; 
+  justify-content: end;
+  flex-direction: row-reverse;
+}
+
+  #sectionLogin{
+    width: 150px;
+  }
+  #cartArea{
+    width: 50px;
+  }
+  #sectionLogin p {
+    font-size: 1.1rem;
+  }
+  #menuNavigation {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  #menuNavigation #menuCategorias {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .slideshow-wrapper {
+    height: 200px;
+  }
+  #conteinerCategory {
+    gap: 15px;
+  }
+   #conteinerNovidades, #conteinerRecomendado{
+    justify-content: space-around;
+  }
+  .categoryitem {
+    width: 100px;
+    flex: 0 0 100px;
+    font-size: 1.3rem;
+  }
+  .itemNovidades {
+    width: 45%;
+    height: auto;
+  }
+  #topFooter {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .areasFooter {
+    width: 100%;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  #topHeader {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+  #searchArea input {
+    width: 100%;
+    font-size: 1rem;
+  }
+  #searchArea img{
+      right: 10px;
+  left: auto; 
+  }
+  #logo img {
+    width: 40px !important;
+  }
+  .slideshow-wrapper {
+    height: 150px;
+  }
+  .carousel-wrapper .arrow {
+    left: 5px;  /* ou right: 5px; conforme o lado */
+    transform: none;
+  }
+  
+  #conteinerNovidades {
+    justify-content: space-between;
+  }
+
+ .itemNovidades {
+    width: 48%; /* permite 2 por linha */
+    max-width: none; /* garante que não estoure */
+  }
+  .infoProduto p {
+    font-size: 1.2rem;
+  }
+  #bottomFooter p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+    .product-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .current-price {
+    font-size: 2rem;
+  }
+
+  .add-to-cart-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .features-list,
+  .shipping-list {
+    font-size: 1.3rem;
+  }
+
+}
+
+
