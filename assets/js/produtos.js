@@ -319,3 +319,34 @@
 
         // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', init);
+ // Pega elementos
+  const modal = document.getElementById("contact-modal");
+  const btn = document.getElementById("add-to-cart2");
+  const closeBtn = document.querySelector(".close");
+
+  // Abre modal ao clicar no botão
+  btn.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
+
+  // Fecha modal ao clicar no X
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Fecha modal ao clicar fora do conteúdo
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+    // Pega o parâmetro da URL
+    const params = new URLSearchParams(window.location.search);
+    const tipo = params.get("tipo");
+
+    if (tipo === "venda") {
+      document.getElementById("layoutVenda").style.display = "flex";
+    } else if (tipo === "troca") {
+      document.getElementById("layoutTroca").style.display = "flex";
+    }
