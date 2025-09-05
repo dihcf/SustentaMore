@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de vendas, trocas e doações de intens no municipio de General Sampaio. Com Foco em itens Reutilizaveis">
+    <link rel="icon" href="assets/images/favicon/favicon.ico">
+    <title>Sustenta+</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/carinho.css">
+    <link rel="stylesheet" href="assets/css/responsive/globalResponsive.css">
+</head>
+<body>
+    <header>
+      <div id="topHeader">    
+            <span id="logo">
+                <img src="assets/images/logos/sustenta_logo.png" alt="" class="logo">
+                <img src="assets/images/logos/jose_bezerra_logo_transparent.png" alt="" class="logo">
+                <img src="assets/images/logos/generalSampaio.png" alt="" class="logo">
+                <img src="assets/images/logos/general_cientifico_logo_transparent.png" alt="" class="logo">
+            </span>
+            
+            <span id="searchArea">
+                <input type="text" placeholder="Buscar no Sustenta+">
+                <img src="assets/images/icons/search.png" alt="">
+            </span>
+            
+            <div id="actionsItems">
+             <span id="cartArea">
+                <div id="cart">
+                <p id="cart-count">0</p>
+                <img src="assets/images/icons/cart.png" alt="">
+                </div>
+             </span>
+
+            <div id="sectionLogin">
+                <img src="assets/images/icons/login.png" alt="">
+                <div id="textSectionLogin">
+                    <p>MINHA CONTA</p>
+                    <span>
+                        <a href="login.html">Entrar</a> <i>|</i>
+                        <a href="cadastro.html">Cadastra-se</a> 
+                    </span>
+                </div>
+            </div>
+            </div>
+      </div>  
+
+        <nav id="menuNavigation">
+           <div id="localEntrega">
+                <img src="assets/images/icons/mapa.png" alt="" id="mapaIcon">
+                <span id="localText">
+                    <p id="localTextP1">Local de Entrega</p>
+                    <p>Rua Manoel Soares Guimarães - Nº 236, Centro</p>
+                </span>
+            </div>
+            
+            <ul id="menuCategorias">
+                <li><a href="">Doação</a></li>
+                <li><a href="">Troca</a></li>
+                <li><a href="">Vendas</a></li>
+                <li><a href="">Parcerias</a></li>
+                <li><a href="">Eventos</a></li>
+                <li><a href="">Ajuda</a></li>
+                <li><a href="">Sobre Nos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  
+        <div class="container">
+        <div class="main-content">
+            <!-- Products Column -->
+            <div class="products-column">
+                <!-- Select All -->
+                <div class="card">
+                    <div class="card-padding">
+                        <div class="select-all">
+                            <div class="select-all-left">
+                                <input type="checkbox" id="select-all" class="checkbox" checked>
+                                <label for="select-all" class="select-all-label">Selecionar todos os itens (6)</label>
+                            </div>
+                            <button class="delete-selected">Excluir selecionados</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EcoStore Products -->
+                <div class="card">
+                    <div class="store-header">
+                        <div class="store-info">
+                            <input type="checkbox" class="checkbox" checked>
+                            <span>🏪</span>
+                            <span class="store-name">EcoStore Oficial</span>
+                            <span class="store-badge">Loja Verificada</span>
+                        </div>
+                        <span class="shipping-info">Frete: Grátis</span>
+                    </div>
+                    
+                    <div class="product-item" data-price="89.90">
+                        <div class="product-content">
+                            <input type="checkbox" class="checkbox" checked>
+                            <svg class="product-image" viewBox="0 0 80 80">
+                                <rect width="80" height="80" fill="#10b981"/>
+                                <text x="40" y="50" font-size="30" text-anchor="middle" fill="white">🧴</text>
+                            </svg>
+                            <div class="product-details">
+                                <h3 class="product-title">Shampoo Orgânico Natural</h3>
+                                <p class="product-description">Sem sulfatos, parabenos e silicones | 300ml</p>
+                                <div class="price-section">
+                                    <span class="current-price">R$ 89,90</span>
+                                    <span class="original-price">R$ 119,90</span>
+                                    <span class="discount-badge">-25%</span>
+                                </div>
+                                <div class="product-actions">
+                                    <div class="quantity-controls">
+                                        <button class="quantity-btn quantity-decrease">−</button>
+                                        <span class="quantity-display">1</span>
+                                        <button class="quantity-btn quantity-increase">+</button>
+                                    </div>
+                                    <button class="action-btn remove-btn">Remover</button>
+                                    <button class="action-btn save-btn">Salvar para depois</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-price="79.90">
+                        <div class="product-content">
+                            <input type="checkbox" class="checkbox" checked>
+                            <svg class="product-image" viewBox="0 0 80 80">
+                                <rect width="80" height="80" fill="#10b981"/>
+                                <text x="40" y="50" font-size="30" text-anchor="middle" fill="white">🧴</text>
+                            </svg>
+                            <div class="product-details">
+                                <h3 class="product-title">Condicionador Orgânico Natural</h3>
+                                <p class="product-description">Hidratação profunda | 300ml</p>
+                                <div class="price-section">
+                                    <span class="current-price">R$ 79,90</span>
+                                </div>
+                                <div class="product-actions">
+                                    <div class="quantity-controls">
+                                        <button class="quantity-btn quantity-decrease">−</button>
+                                        <span class="quantity-display">1</span>
+                                        <button class="quantity-btn quantity-increase">+</button>
+                                    </div>
+                                    <button class="action-btn remove-btn">Remover</button>
+                                    <button class="action-btn save-btn">Salvar para depois</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Casa Verde Products -->
+                <div class="card">
+                    <div class="store-header" style="background: #eff6ff;">
+                        <div class="store-info">
+                            <input type="checkbox" class="checkbox" checked>
+                            <span>🏠</span>
+                            <span class="store-name" style="color: #1e40af;">Casa Verde</span>
+                            <span class="store-badge" style="background: #dbeafe; color: #1e40af;">⭐ 4.8</span>
+                        </div>
+                        <span class="shipping-info">Frete: R$ 12,90</span>
+                    </div>
+                    
+                    <div class="product-item" data-price="45.50">
+                        <div class="product-content">
+                            <input type="checkbox" class="checkbox" checked>
+                            <svg class="product-image" viewBox="0 0 80 80">
+                                <rect width="80" height="80" fill="#3b82f6"/>
+                                <text x="40" y="50" font-size="30" text-anchor="middle" fill="white">🧽</text>
+                            </svg>
+                            <div class="product-details">
+                                <h3 class="product-title">Kit 3 Esponjas Biodegradáveis</h3>
+                                <p class="product-description">Fibra de coco 100% natural | Compostável</p>
+                                <div class="price-section">
+                                    <span class="current-price" style="color: #3b82f6;">R$ 45,50</span>
+                                </div>
+                                <div class="product-actions">
+                                    <div class="quantity-controls">
+                                        <button class="quantity-btn quantity-decrease">−</button>
+                                        <span class="quantity-display">2</span>
+                                        <button class="quantity-btn quantity-increase">+</button>
+                                    </div>
+                                    <button class="action-btn remove-btn">Remover</button>
+                                    <button class="action-btn save-btn">Salvar para depois</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-price="32.90">
+                        <div class="product-content">
+                            <input type="checkbox" class="checkbox" checked>
+                            <svg class="product-image" viewBox="0 0 80 80">
+                                <rect width="80" height="80" fill="#3b82f6"/>
+                                <text x="40" y="50" font-size="30" text-anchor="middle" fill="white">🧼</text>
+                            </svg>
+                            <div class="product-details">
+                                <h3 class="product-title">Sabonete Artesanal Lavanda</h3>
+                                <p class="product-description">100% natural | Óleo essencial | 120g</p>
+                                <div class="price-section">
+                                    <span class="current-price" style="color: #3b82f6;">R$ 32,90</span>
+                                </div>
+                                <div class="product-actions">
+                                    <div class="quantity-controls">
+                                        <button class="quantity-btn quantity-decrease">−</button>
+                                        <span class="quantity-display">1</span>
+                                        <button class="quantity-btn quantity-increase">+</button>
+                                    </div>
+                                    <button class="action-btn remove-btn">Remover</button>
+                                    <button class="action-btn save-btn">Salvar para depois</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-price="28.50">
+                        <div class="product-content">
+                            <input type="checkbox" class="checkbox" checked>
+                            <svg class="product-image" viewBox="0 0 80 80">
+                                <rect width="80" height="80" fill="#3b82f6"/>
+                                <text x="40" y="50" font-size="30" text-anchor="middle" fill="white">🪥</text>
+                            </svg>
+                            <div class="product-details">
+                                <h3 class="product-title">Escova de Dentes Bambu</h3>
+                                <p class="product-description">Cerdas macias | Biodegradável | Adulto</p>
+                                <div class="price-section">
+                                    <span class="current-price" style="color: #3b82f6;">R$ 28,50</span>
+                                </div>
+                                <div class="product-actions">
+                                    <div class="quantity-controls">
+                                        <button class="quantity-btn quantity-decrease">−</button>
+                                        <span class="quantity-display">1</span>
+                                        <button class="quantity-btn quantity-increase">+</button>
+                                    </div>
+                                    <button class="action-btn remove-btn">Remover</button>
+                                    <button class="action-btn save-btn">Salvar para depois</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Moda Sustentável Products -->
+                <div class="card">
+                    <div class="store-header" style="background: #faf5ff;">
+                        <div class="store-info">
+                            <input type="checkbox" class="checkbox" checked>
+                            <span>👗</span>
+                            <span class="store-name" style="color: #7c3aed;">Moda Sustentável</span>
+                            <span class="store-badge" style="background: #e9d5ff; color: #7c3aed;">Certificado</span>
+                        </div>
+                        <span class="shipping-info">Frete: Grátis</span>
+                    </div>
+                    
+                    <div class="product-item" data-price="125.00">
+                        <div class="product-content">
+                            <input type="checkbox" class="checkbox" checked>
+                            <svg class="product-image" viewBox="0 0 80 80">
+                                <rect width="80" height="80" fill="#8b5cf6"/>
+                                <text x="40" y="50" font-size="30" text-anchor="middle" fill="white">👕</text>
+                            </svg>
+                            <div class="product-details">
+                                <h3 class="product-title">Camiseta Algodão Orgânico</h3>
+                                <p class="product-description">Tamanho: M | Cor: Natural | Certificado GOTS</p>
+                                <div class="price-section">
+                                    <span class="current-price" style="color: #8b5cf6;">R$ 125,00</span>
+                                </div>
+                                <div class="product-actions">
+                                    <div class="quantity-controls">
+                                        <button class="quantity-btn quantity-decrease">−</button>
+                                        <span class="quantity-display">1</span>
+                                        <button class="quantity-btn quantity-increase">+</button>
+                                    </div>
+                                    <button class="action-btn remove-btn">Remover</button>
+                                    <button class="action-btn save-btn">Salvar para depois</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="card">
+                    <div class="card-padding">
+                        <h3 class="summary-title">Resumo do Pedido</h3>
+                        
+                        <!-- Location -->
+                        <div class="location-section">
+                            <div class="location-header">
+                                <span class="location-text">📍 Entregar em:</span>
+                                <a href="#" class="change-btn">Alterar</a>
+                            </div>
+                            <p class="address">São Paulo, SP - 01234-567</p>
+                        </div>
+
+                        <!-- Delivery Options -->
+                        <div class="delivery-section">
+                            <h4 class="section-title">🚚 Opções de Entrega</h4>
+                            <label class="delivery-option">
+                                <input type="radio" name="delivery" value="standard" checked>
+                                <div class="delivery-info">
+                                    <h4>Entrega Padrão</h4>
+                                    <p>5-7 dias úteis</p>
+                                </div>
+                                <span class="delivery-price free-delivery">Grátis</span>
+                            </label>
+                            <label class="delivery-option">
+                                <input type="radio" name="delivery" value="express">
+                                <div class="delivery-info">
+                                    <h4>Entrega Expressa</h4>
+                                    <p>2-3 dias úteis</p>
+                                </div>
+                                <span class="delivery-price">R$ 15,90</span>
+                            </label>
+                            <label class="delivery-option">
+                                <input type="radio" name="delivery" value="same-day">
+                                <div class="delivery-info">
+                                    <h4>Entrega no Mesmo Dia</h4>
+                                    <p>Até 18h (SP capital)</p>
+                                </div>
+                                <span class="delivery-price">R$ 29,90</span>
+                            </label>
+                        </div>
+
+                        <!-- Summary -->
+                        <div class="summary-section">
+                            <div class="summary-line">
+                                <span class="summary-label">Subtotal (6 itens)</span>
+                                <span id="subtotal">R$ 397,20</span>
+                            </div>
+                            <div class="summary-line">
+                                <span class="summary-label">Frete EcoStore</span>
+                                <span class="free-delivery">Grátis</span>
+                            </div>
+                            <div class="summary-line">
+                                <span class="summary-label">Frete Casa Verde</span>
+                                <span id="frete-casa-verde">R$ 12,90</span>
+                            </div>
+                            <div class="summary-line">
+                                <span class="summary-label">Frete Moda Sustentável</span>
+                                <span class="free-delivery">Grátis</span>
+                            </div>
+                            <div class="summary-line hidden" id="discount-row">
+                                <span class="summary-label">Desconto</span>
+                                <span class="free-delivery" id="discount-amount">-R$ 0,00</span>
+                            </div>
+                            <hr class="summary-divider">
+                            <div class="total-line">
+                                <span>Total</span>
+                                <span class="total-amount" id="total">R$ 410,10</span>
+                            </div>
+                        </div>
+
+                        <!-- Payment Methods -->
+                        <div class="delivery-section">
+                            <h4 class="section-title">💳 Forma de Pagamento</h4>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="pix" checked>
+                                <div class="payment-content">
+                                    <div class="payment-info">
+                                        <span>📱</span>
+                                        <span>PIX</span>
+                                    </div>
+                                    <span class="payment-benefit">5% desconto</span>
+                                </div>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="credit">
+                                <div class="payment-content">
+                                    <div class="payment-info">
+                                        <span>💳</span>
+                                        <span>Cartão de Crédito</span>
+                                    </div>
+                                    <span style="color: #6b7280; font-size: 14px;">até 12x sem juros</span>
+                                </div>
+                            </label>
+                            <div id="credit-card-details" class="hidden" style="margin-left: 28px; margin-bottom: 8px; padding: 12px; background: #f9fafb; border-radius: 8px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <span style="color: #3b82f6;">💳</span>
+                                        <span style="font-size: 14px; font-weight: 500;" id="selected-credit-card">Visa •••• 1234</span>
+                                    </div>
+                                    <button class="change-credit-card" style="color: #2563eb; font-size: 14px; background: none; border: none; cursor: pointer;">Alterar cartão</button>
+                                </div>
+                            </div>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="debit">
+                                <div class="payment-content">
+                                    <div class="payment-info">
+                                        <span>💳</span>
+                                        <span>Cartão de Débito</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <div id="debit-card-details" class="hidden" style="margin-left: 28px; margin-bottom: 8px; padding: 12px; background: #f9fafb; border-radius: 8px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <span style="color: #059669;">💳</span>
+                                        <span style="font-size: 14px; font-weight: 500;" id="selected-debit-card">Mastercard •••• 5678</span>
+                                    </div>
+                                    <button class="change-debit-card" style="color: #2563eb; font-size: 14px; background: none; border: none; cursor: pointer;">Alterar cartão</button>
+                                </div>
+                            </div>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="boleto">
+                                <div class="payment-content">
+                                    <div class="payment-info">
+                                        <span>🧾</span>
+                                        <span>Boleto</span>
+                                    </div>
+                                    <span class="payment-benefit" style="color: #2563eb;">3% desconto</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!-- Coupon -->
+                        <div class="coupon-section">
+                            <div class="coupon-input-group">
+                                <input type="text" id="coupon-input" class="coupon-input" placeholder="Código do cupom">
+                                <button class="coupon-btn">Aplicar</button>
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <button class="btn-primary">Finalizar Compra</button>
+                        <button class="btn-secondary">Continuar Comprando</button>
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Selection Modal -->
+    <div id="card-modal" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">Selecionar Cartão de Crédito</h3>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="cards-list"></div>
+                <button class="add-card-btn">
+                    <div class="add-card-content">
+                        <span class="add-card-icon">+</span>
+                        <span class="add-card-text">Adicionar Novo Cartão</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Card Modal -->
+    <div id="add-card-modal" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Adicionar Novo Cartão</h3>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="add-card-form">
+                    <div class="form-group">
+                        <label class="form-label">Número do Cartão</label>
+                        <input type="text" id="card-number" class="form-input" placeholder="1234 5678 9012 3456" maxlength="19">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Nome no Cartão</label>
+                        <input type="text" id="card-name" class="form-input" placeholder="João Silva">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Validade</label>
+                            <input type="text" id="card-expiry" class="form-input" placeholder="MM/AA" maxlength="5">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">CVV</label>
+                            <input type="text" id="card-cvv" class="form-input" placeholder="123" maxlength="4">
+                        </div>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="save-card" class="checkbox">
+                        <label for="save-card">Salvar cartão para próximas compras</label>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <button type="button" class="btn-cancel">Cancelar</button>
+                        <button type="submit" class="btn-submit">Adicionar Cartão</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        
+        <section id="topFooter">
+            <div class="areasFooter">
+                <h3>ATEDIMENTO AO CLIENTE</h3>
+                <div>
+                    <ul>
+                        <li class="ListFooter"><a href="">Central de Ajuda</a></li>
+                        <li class="ListFooter"><a href="">Metodos de Pagamento</a></li>
+                        <li class="ListFooter"><a href="">Garantia Sustenta+</a></li>
+                        <li class="ListFooter"><a href="">Fale Conosco</a></li>
+                        <li class="ListFooter"><a href="">Devolução e Reembolso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="areasFooter">
+                <h3>SOBRE O SUSTENTA+</h3>
+                <div>
+                    <ul>
+                        <li class="ListFooter"><a href="">Sobre Nós</a></li>
+                        <li class="ListFooter"><a href="">Politicas</a></li>
+                        <li class="ListFooter"><a href="">Politicas de Privacidade</a></li>
+                        <li class="ListFooter"><a href="">Venda no Sustenta+</a></li>
+                        <li class="ListFooter"><a href="">Programa de Afiliados do Sustenta+</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="areasFooter">
+                <h3>PAGAMENTOS</h3>
+                <div>
+                  <img src="https://down-br.img.susercontent.com/file/a65c5d1c5e556c6197f8fbd607482372" alt="">
+                  <img src="https://down-br.img.susercontent.com/file/95d849253f75d5e6e6b867af4f7c65aa" alt="">
+                  <img src="https://down-br.img.susercontent.com/file/5ee8fb5f33fdf1e42ea32b86f47f54c4" alt="">
+                  <img src="https://down-br.img.susercontent.com/file/br-11134258-7r98o-lxsovyseln7jc5" alt="">
+                  <img src="https://down-br.img.susercontent.com/file/44734b7fc343eb46237c2d90c6c9ca60" alt="">
+                  
+                </div>
+            </div>
+        </section>
+<hr>
+        <section id="bottomFooter">
+         <p> Amazon Serviços de Varejo do Brasil Ltda. | CNPJ 15.436.940/0001-03 </p>
+<p>Av. Juscelino Kubitschek, 2041, Torre E, 18° andar - São Paulo CEP: 04543-011| Fale conosco| ajuda-amazon@amazon.com.br </p>
+<p>Formas de pagamento aceitas: cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito (Visa e Elo), Boleto e Pix.</p> 
+        </section>
+
+    </footer>
+</body>
+<script src="assets/js/carinho.js"></script>
+</html>

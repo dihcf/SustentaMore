@@ -13,6 +13,51 @@
 </head>
 <body>
     <header>
+    <!-- Side Cart Menu -->
+    <div class="side-cart-overlay" id="side-cart-overlay"></div>
+    <div class="side-cart" id="side-cart">
+        <div class="side-cart-header">
+            <h3 class="side-cart-title">
+                Meu Carrinho
+            </h3>
+            <button class="side-cart-close" id="side-cart-close">&times;</button>
+        </div>
+        
+        <div class="side-cart-content" id="side-cart-content">
+            <!-- Cart items will be populated here -->
+        </div>
+        
+        <div class="side-cart-footer">
+            <div class="side-cart-summary">
+                <div class="side-cart-summary-line">
+                    <span>Subtotal</span>
+                    <span id="side-cart-subtotal">R$ 287,70</span>
+                </div>
+                <div class="side-cart-summary-line">
+                    <span>Frete</span>
+                    <span id="side-cart-shipping">R$ 12,90</span>
+                </div>
+            </div>
+            
+            <div class="side-cart-total">
+                <span>Total</span>
+                <span class="side-cart-total-amount" id="side-cart-total">R$ 300,60</span>
+            </div>
+            
+            <div class="side-cart-actions">
+                <a href="#" class="side-cart-btn side-cart-btn-primary" id="go-to-cart">
+                    Ir para o Carrinho
+                </a>
+                <button class="side-cart-btn side-cart-btn-secondary" id="continue-shopping">
+                    Continuar Comprando
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
       <div id="topHeader">    
             <span id="logo">
                 <img src="assets/images/logos/sustenta_logo.png" alt="" class="logo">
@@ -493,4 +538,5 @@
     </footer>
 </body>
 <script src="assets/js/efects.js"></script>
+<script src="assets/js/global.js"></script>
 </html>

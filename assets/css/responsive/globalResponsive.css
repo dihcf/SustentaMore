@@ -1,0 +1,108 @@
+/* ===================== RESPONSIVIDADE ===================== */
+
+/* Tablets e telas menores (até 1024px) */
+@media (max-width: 1024px) {
+  #searchArea input {
+    width: 400px;
+    font-size: 1.1rem;
+  }
+  #menuNavigation #menuCategorias {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  #menuNavigation #menuCategorias li {
+    width: auto;
+    padding: 5px 10px;
+  }
+
+}
+
+/* Celulares médios (até 768px) */
+@media (max-width: 768px) {
+  #topHeader {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+  #logo {
+    order: 1;
+    justify-content: center;
+  }
+
+  #actionsItems {
+    order: 2;
+  }
+
+  #searchArea {
+    order: 3;
+  }
+  #searchArea input {
+    width: 100%;
+  }
+#actionsItems{
+  align-items: center;
+  width: 100%; 
+  justify-content: end;
+  flex-direction: row-reverse;
+}
+
+  #sectionLogin{
+    width: 150px;
+  }
+  #cartArea{
+    width: 50px;
+  }
+  #sectionLogin p {
+    font-size: 1.1rem;
+  }
+  #menuNavigation {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  #menuNavigation #menuCategorias {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+ 
+  #topFooter {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .areasFooter {
+    width: 100%;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  #topHeader {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+  #searchArea input {
+    width: 100%;
+    font-size: 1rem;
+  }
+  #searchArea img{
+      right: 10px;
+  left: auto; 
+  }
+  #logo img {
+    width: 40px !important;
+  }
+
+ 
+  #bottomFooter p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+
