@@ -41,3 +41,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
+let selectedRating = 0;
+
+document.querySelectorAll('.rating-star').forEach(star => {
+    star.addEventListener('click', e => {
+        selectedRating = parseInt(e.target.dataset.rating);
+        updateRatingDisplay(selectedRating);
+    });
+
+    star.addEventListener('mouseenter', e => {
+        const rating = parseInt(e.target.dataset.rating);
+        updateRatingDisplay(rating);
+    });
+});
+
+document.getElementById('rating-input').addEventListener('mouseleave', () => {
+    updateRatingDisplay(selectedRating);
+});
+
+function updateRatingDisplay(rating) {
+    document.querySelectorAll('.rating-star').forEach((star, index) => {
+        if (index < rating) {
+            star.classList.add('active');
+        } else {
+            star.classList.remove('active');
+        }
+    });
+}

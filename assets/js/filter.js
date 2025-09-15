@@ -63,3 +63,26 @@ document.addEventListener('DOMContentLoaded', () => {
     precoMaxInput.addEventListener('input', filtrarPorPreco);
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const ratingStars = document.querySelectorAll('#rating-input .rating-star');
+  const container = document.getElementById('conteinerNovidades');
+
+  ratingStars.forEach(star => {
+    star.addEventListener('click', () => {
+      const selectedRating = parseInt(star.getAttribute('data-rating'));
+
+      // Remove destaque anterior
+      ratingStars.forEach(s => s.classList.remove('selected'));
+      star.classList.add('selected');
+
+      const items = container.querySelectorAll('.itemNovidades');
+
+      items.forEach(item => {
+        const ratingText = item.querySelector('.rating-stars')?.innerText || '';
+        const itemRating = (ratingText.match(/★/g) || []).length;
+
+        item.style.display = itemRating >= selectedRating ? '' : 'none';
+      });
+    });
+  });
+});

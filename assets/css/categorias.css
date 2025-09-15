@@ -208,6 +208,16 @@ option{
       color: grey ;
 
   }
+  .rating-star{
+    font-size: 2rem;
+  }
+  .rating-star.active {
+    color: gold;
+}
+ .rating-stars{
+     color: #fbbf24;
+     font-size: 2rem;
+  }
   .areasFooter{
     width: 33%;
     display: flex;
