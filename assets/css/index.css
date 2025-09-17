@@ -21,6 +21,12 @@
     height: 100%;
     object-fit: cover;
   }
+    video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Mostrar tudo, mas pode deixar bordas pretas */
+  border-radius: 20px 0 0px 20px;
+}
   input[type="radio"] {
     display: none;
   }
@@ -109,6 +115,7 @@
     font-weight: 800;
     width: 130px;
     color: grey;
+    cursor: pointer;
     flex: 0 0 130px; /* largura fixa para scroll controlado */
   }
   .doar{

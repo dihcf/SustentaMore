@@ -13,7 +13,7 @@
     }
     body{
         background-color: #fafafa ;
-        
+         overflow-x: hidden; /* <-- evita rolagem lateral */
 
     }
 
@@ -624,5 +624,4 @@
   }
   hr{
     width: 97%;
-
   }
